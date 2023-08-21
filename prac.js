@@ -1,3 +1,4 @@
+// CallBack function 1
 // let upperCase=function(str){
 //     return str.toUpperCase();
 // }
@@ -9,10 +10,31 @@
 // }
 // console.log(transformer("Hello",lowerCase))
 
-var talk = function(fx){
-    fx();
+
+// CallBack Function 2
+// var talk = function(fx){
+//     fx();
+// }
+// var sayHi = function(){
+//     console.log("hi");
+// }
+// talk(sayHi);
+
+// CallBack Function 3
+// var calc = function(fx,a,b){
+//     return fx(a,b);
+// }
+// var sum = function(x,y){
+//     console.log(x+y);
+// }
+// calc(sum,5,6)
+
+var calc = function(fx,a,b){
+    return fx(a,b);
 }
-var sayHi = function(){
-    console.log("hi");
+var diff = function(a,b){
+    console.log(a-b)
 }
-talk(sayHi);
+calc(diff,18,6)
+// CallBack Function 4
+
